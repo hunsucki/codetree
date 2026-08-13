@@ -11,10 +11,8 @@ int main() {
 
     cin >> str;
 
-    len = str.length() - 1;
-
-    for(int i = 0; i < str.length(); i++)
-        decimal += (str[i] - '0') * pow(2, len--);
+    for(int i = 0; i < str.length(); i++) 
+        decimal = decimal * 2 + (str[i] - '0');
 
     cout << decimal << endl;
 
